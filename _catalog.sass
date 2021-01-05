@@ -1,0 +1,120 @@
+/*catalog*/
+.site_info
+    height: 148px
+    background: #f8f3f4
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &_left
+        font-size: 24px
+        line-height: 29px
+        color: $colorSelect
+
+    &_right
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+
+    &_right:last-child
+        font-weight: bold
+        color: $colorSelect
+
+    &_right:not(:last-child)::after
+        content: "/"
+        padding-right: 8px
+        padding-left: 8px
+
+details summary::-webkit-details-marker
+    display: none
+
+.sort
+    display: flex
+    padding-top: 51px
+    padding-bottom: 64px
+    position: relative
+
+    &_text
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+.filter_text
+    padding-right: 11px
+
+.sort_filter
+    padding-top: 16px
+    padding-bottom: 16px
+    position: absolute
+
+    &_active:hover
+        position: absolute
+        z-index: 1
+        padding: 16px
+        width: 360px
+        background: #ffffff
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+    &_active:hover .sort_text
+        color: $colorSelect
+        fill: $colorSelect
+
+    &_active:hover .sort_summary
+        color: $colorSelect
+
+    &_active:hover .sort_items
+        display: block
+
+.sort_items
+    padding-left: 16px
+    display: none
+
+summary
+    outline: none
+
+.sort_summary
+    font-size: 14px
+    line-height: 17px
+    color: #6f6e6e
+    padding-top: 11px
+    padding-bottom: 11px
+
+.sort_ul
+    list-style-type: none
+    padding-top: 24px
+    padding-bottom: 24px
+
+.sort_a
+    font-size: 14px
+    line-height: 17px
+    color: #6f6e6e
+
+.sort_li:not(:last-child)
+    padding-bottom: 11px
+
+.sort_param
+    margin-left: calc(33.33333% + 15px)
+    display: flex
+    padding-top: 16px
+
+.param_text
+    padding-right: 10px
+    font-size: 14px
+    line-height: 17px
+    color: #6f6e6e
+
+.sort_open
+    padding-right: 28px
+    position: relative
+
+.sort_size
+    position: absolute
+    display: flex
+    flex-direction: column
+    padding: 8px 30px 3px 8px
+    background: #ffffff
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    z-index: 1
+
+.sort_input
+    margin-right: 7px
+    margin-bottom: 8px

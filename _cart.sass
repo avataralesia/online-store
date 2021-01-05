@@ -1,0 +1,123 @@
+.card-content
+    display: flex
+    justify-content: space-between
+    margin-top: 96px
+
+.card
+    display: flex
+    flex-direction: column
+    width: 652px
+
+    &_param
+        display: flex
+        border: 1px solid #EAEAEA
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+        height: 306px
+        margin-bottom: 40px
+        background: #FFFFFF
+
+    &_param_header
+        font-size: 24px
+        line-height: 29px
+        color: #222222
+        padding-top: 22px
+        padding-bottom: 42px
+        width: 262px
+
+    &_param_text
+        padding-bottom: 6px
+        font-size: 22px
+        line-height: 26px
+
+.card_param_header:hover
+    color: $colorSelect
+
+.card_quantity
+    width: 44px
+    height: 24px
+    padding-left: 16px
+    border: 1px solid #EAEAEA
+
+.shopping
+    height: 100%
+    margin-right: 31px
+    position: relative
+
+.card__svg
+    position: absolute
+    top: 28px
+    right: 22px
+    transition: .1s
+    &:hover
+        filter: brightness(50%)
+        transform: rotate(360deg)
+
+.info_card
+    display: flex
+    flex-direction: column
+
+.shipping
+    width: 360px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+
+    &_header
+        padding-bottom: 20px
+        font-size: 16px
+        line-height: 19px
+        color: #2e2d2d
+
+    &_address
+        padding: 16px
+        margin-bottom: 20px
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #222222
+        border: 1px solid #A4A4A4
+
+.total
+    display: flex
+    flex-direction: column
+    background: #F5F3F3
+    margin-top: 57px
+    padding: 39px 34px 42px
+    align-items: flex-end
+    height: 214px
+    &_sub
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        padding-bottom: 12px
+    &_grand
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        padding-bottom: 20px
+
+.checkout
+    border-radius: 0
+    margin: 17px auto 0
+
+.card-content_button
+    margin-top: 32px
+    margin-bottom: 128px
+    display: flex
+    justify-content: space-between
+
+.clear
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    &_pd
+        padding: 11px 15px
+        width: 110px
+        font-size: 11px
+        line-height: 13px
+
+.hr_cart
+    width: 272px
+    height: 1px
+    background: #E2E2E2
